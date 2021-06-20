@@ -6,8 +6,8 @@ YGui.title("Test 123")
 YGui.minsize(504,336)
 
 
-dice=Button(YGui,width=20,text="Submit Text",height=20)
-dice.place(x=100,y=100)
+dice=Button(YGui,text="Submit Text")
+dice.place(x=100,y=100,height=20,width=100)
 def reroll():
     roled=R.randint(1,7)
     return roled
