@@ -10,7 +10,8 @@ class pigPile:
     def DoSomething(self,event):
         print(self.rerollAll()) 
     dice=Button(YGui,text="Confirm")
-    xyz=DoSomething
+    #trying
+    xyz=lambda a:DoSomething()
     dice.bind("<Button-1>",xyz)
     dice.place(x=10,y=10,height=20,width=100)
     
