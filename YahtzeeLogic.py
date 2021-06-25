@@ -1,4 +1,5 @@
 class YahtzeeLogic:
+    could allbe static methods
     #This class is for the logic of yahtzee game. I was thinking of pure functions and inmutablitity
     #I will have 3 process method that will break it down in three ways:
     """The first way will be a dicinary of each side rolled.
@@ -14,7 +15,7 @@ ordered list of sides for straights
     def sortedVersion(self,diceList):
         return diceList.sort()
     
-    def isFullHouse(rolls):
+    def isFullHouse(self,rolls):
         pass
 #         try:
 #             rolls.index(1)
@@ -35,10 +36,10 @@ ordered list of sides for straights
         pass
         
 #logic part for rolling the dice/archive
-    def rerollAll(self):
-        for diceRerolled in self.diceList:
+    def rerollAll(self,diceList):
+        for diceRerolled in diceList:
             diceRerolled.reroll()
-        return self.diceList 
+        return diceList 
 
     def DoSomething(self):
         print(self.rerollAll())
@@ -52,3 +53,6 @@ ordered list of sides for straights
             for diceRerolled in dices:
                 diceRerolled.reroll()
                 return dices
+    def getNum(self,List):
+        return list(map(lambda a:a.getNum(),List))
+        #return list(map(Str,List))
