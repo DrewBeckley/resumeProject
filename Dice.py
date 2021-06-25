@@ -11,4 +11,7 @@ class Dice:
     #I used this because it gives unique every time
     def reroll(self):
         self.num=R.randint(1,6)
+    def getNum(self):
+        return int(self.num)
+    
 
