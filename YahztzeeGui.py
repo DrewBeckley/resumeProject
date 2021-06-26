@@ -1,4 +1,3 @@
-import random as R
 from tkinter import *
 import Dice as D
 import YahtzeeLogic as logic#import *
@@ -21,12 +20,12 @@ def main():
     
     
     dice=Button(YGui,text="Confirm",command=testingRollAll)
-    #trying to add argument to bind when I had this in a class
+    #trying to add argument to bind when I had this was in a class
     xyz=lambda:testingRollAll()
     #dice.bind("<Button-1>",xyz)
     dice.place(x=10,y=10,height=20,width=100)
 
-
+    #this could become a class
     diceList=[]
     for n in range(5):
         x=D.Dice(n)
@@ -37,7 +36,7 @@ def main():
     #thinking about mypy for static
     def mypyTest(intiger:int)->None:
         print(intiger)
-    #    mypyTest("This shouldn't work because of mypy(str !=int)")
+    #mypyTest("This shouldn't work because of mypy(str !=int)")
     #diceCurrenit={1:reroll(),2:reroll(), 3:reroll(),4:reroll(),5:reroll()}
     YGui.mainloop()
 #could uise the import 

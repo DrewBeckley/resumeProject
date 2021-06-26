@@ -1,5 +1,5 @@
 class YahtzeeLogic:
-    could allbe static methods
+    #could all be all static methods
     #This class is for the logic of yahtzee game. I was thinking of pure functions and inmutablitity
     #I will have 3 process method that will break it down in three ways:
     """The first way will be a dicinary of each side rolled.
@@ -10,7 +10,7 @@ ordered list of sides for straights
     def dictDictBreakDown(self,diceList):
         #testing out may need to adjust later
         dictVerson={i:diceList for i in range(0,len(diceList))}
-        return dictVersion
+        return dictVerson
     #need to do a mutation check to see if it changes the orginal lists
     def sortedVersion(self,diceList):
         return diceList.sort()
@@ -56,3 +56,4 @@ ordered list of sides for straights
     def getNum(self,List):
         return list(map(lambda a:a.getNum(),List))
         #return list(map(Str,List))
+print("this could be creating a gui")
