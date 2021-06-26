@@ -13,5 +13,8 @@ class Dice:
         self.num=R.randint(1,6)
     def getNum(self):
         return int(self.num)
+    #testing
+    def setTo(self,side):
+        self.num=side
     
 
