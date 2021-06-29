@@ -7,9 +7,11 @@ This mean I can use this for the Yahtzee,upper section  of the score card, and x
 The next is a sorted list to see if it is a x of a kind,yahtzee(by seeing if ends match)
 ordered list of sides for straights
 """
-    def dictDictBreakDown(self,diceList):
+    from collections import Counter
+    def DictBreakDown(self,diceList):
         #testing out may need to adjust later
         dictVerson={i:diceList for i in range(0,len(diceList))}
+        Counter(diceList)
         return dictVerson
     #need to do a mutation check to see if it changes the orginal lists
     def sortedVersion(self,diceList):
