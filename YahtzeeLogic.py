@@ -10,7 +10,7 @@ ordered list of sides for straights
     from collections import Counter
     def DictBreakDown(self,diceList):
         #testing out may need to adjust later
-        dictVerson={i:diceList for i in range(0,len(diceList))}
+        #dictVerson={i:diceList for i in range(0,len(diceList))}
         Counter(diceList)
         return dictVerson
     #need to do a mutation check to see if it changes the orginal lists
