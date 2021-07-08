@@ -1,11 +1,12 @@
 import YahtzeeLogic as Y
+from testingLogic import cases,TestLogic
+#from testingLogic import cases,TestLogic#,cases.getFullHouse
 
-from testingLogic import cases#,cases.getFullHouse
-import unittest
 #this will be the main that kick off everything but for now just testing the logic
 x=Y.YahtzeeLogic()
 
-print(dir())
+print((dir()))
 fullhouse=cases.getFullHouse()
 #print(fullhouse)
-print(list(x.dictBreakDown(fullhouse)))
+print(len(x.dictBreakDown(fullhouse)))
+TestLogic.testFullHouseCheck()

@@ -19,7 +19,12 @@ ordered list of sides for straights
         return diceList.sort()
     
     def isFullHouse(self,rolls):
-        pass
+        converted=self.dictBreakDown(rolls)
+        print(converted)
+        if len(converted)==2 or converted in [2,3]:
+            print("it is a lenght of 2",converted)
+            return True
+        return False
 #         try:
 #             rolls.index(1)
 #             
