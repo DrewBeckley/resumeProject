@@ -1,5 +1,7 @@
 import YahtzeeLogic as Y
 from testingLogic import cases,TestLogic
+#from tinydb import TinyDB,Query
+#import Typing
 #from testingLogic import cases,TestLogic#,cases.getFullHouse
 
 #this will be the main that kick off everything but for now just testing the logic

@@ -1,20 +1,18 @@
-import unittest as T
-
 #This class is for test data and asert =,not,and or
 class TestLogic:
-    import unittest as T
+    from unittest import TestCase as T
+    import YahtzeeLogic as Y
     
     def resultTestEquals(self,function,properResult):
         return function==properResult
     def testFullHouseCheck():
-        import YahtzeeLogic as Y
-        print(dir())
+        #print(dir())
         x=Y.YahtzeeLogic()
-        print(x.isFullHouse([1,1,1,2,2]))
-        print(dir(T.TestCase))
-        #T.assertEquals('foo'.upper(), 'FOO')
-        print(x.isFullHouse([1,1,1,2,2]))
-        print(x.isFullHouse([1,1,1,2,2]))
+        #print(x.isFullHouse([1,1,1,2,2]))
+        tester=TestCase()
+        tester.assertEquals('foo'.upper(), 'FOO')
+        #print(x.isFullHouse([1,1,1,2,2]))
+        #print(x.isFullHouse([1,1,1,2,2]))
 class cases:
     def getFullHouse():
         return [1,1,1,2,2]
