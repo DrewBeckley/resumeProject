@@ -6,10 +6,10 @@ class TestLogic:
     def resultTestEquals(self,function,properResult):
         return function==properResult
     def testFullHouseCheck():
-        #print(dir())
-        x=Y.YahtzeeLogic()
+        print(dir())
+        #x=YahtzeeLogic()
         #print(x.isFullHouse([1,1,1,2,2]))
-        tester=TestCase()
+        tester=T.TestCase()
         tester.assertEquals('foo'.upper(), 'FOO')
         #print(x.isFullHouse([1,1,1,2,2]))
         #print(x.isFullHouse([1,1,1,2,2]))

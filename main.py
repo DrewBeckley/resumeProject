@@ -7,7 +7,7 @@ from testingLogic import cases,TestLogic
 #this will be the main that kick off everything but for now just testing the logic
 x=Y.YahtzeeLogic()
 
-print((dir()))
+#print((dir()))
 fullhouse=cases.getFullHouse()
 #print(fullhouse)
 print(len(x.dictBreakDown(fullhouse)))
