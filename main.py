@@ -12,3 +12,4 @@ fullhouse=cases.getFullHouse()
 #print(fullhouse)
 print(len(x.dictBreakDown(fullhouse)))
 TestLogic.testFullHouseCheck()
+

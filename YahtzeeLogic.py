@@ -14,6 +14,7 @@ ordered list of sides for straights
         #dictVerson={i:diceList for i in range(0,len(diceList))}
         data=Counter(diceList)
         return data#dictVerson
+
     #need to do a mutation check to see if it changes the orginal lists
     def sortedVersion(self,diceList):
         return diceList.sort()
