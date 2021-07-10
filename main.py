@@ -1,9 +1,15 @@
 import YahtzeeLogic as Y
-from testingLogic import cases
-import unittest
+from testingLogic import cases,TestLogic
+#from tinydb import TinyDB,Query
+#import Typing
+#from testingLogic import cases,TestLogic#,cases.getFullHouse
+
 #this will be the main that kick off everything but for now just testing the logic
 x=Y.YahtzeeLogic()
 
-print(dir())
-x=cases.getFullHouse()
-print(x)
+#print((dir()))
+fullhouse=cases.getFullHouse()
+#print(fullhouse)
+print(len(x.dictBreakDown(fullhouse)))
+TestLogic.testFullHouseCheck()
+

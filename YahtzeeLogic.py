@@ -1,3 +1,4 @@
+from collections import Counter
 class YahtzeeLogic:
     #could all be all static methods
     #This class is for the logic of yahtzee game. I was thinking of pure functions and inmutablitity
@@ -7,18 +8,24 @@ This mean I can use this for the Yahtzee,upper section  of the score card, and x
 The next is a sorted list to see if it is a x of a kind,yahtzee(by seeing if ends match)
 ordered list of sides for straights
 """
-    from collections import Counter
-    def DictBreakDown(self,diceList):
+    
+    def dictBreakDown(self,diceList):
         #testing out may need to adjust later
-        dictVerson={i:diceList for i in range(0,len(diceList))}
-        Counter(diceList)
-        return dictVerson
+        #dictVerson={i:diceList for i in range(0,len(diceList))}
+        data=Counter(diceList)
+        return data#dictVerson
+
     #need to do a mutation check to see if it changes the orginal lists
     def sortedVersion(self,diceList):
         return diceList.sort()
     
     def isFullHouse(self,rolls):
-        pass
+        converted=self.dictBreakDown(rolls)
+        print(converted)
+        if len(converted)==2 or converted in [2,3]:
+            print("it is a lenght of 2",converted)
+            return True
+        return False
 #         try:
 #             rolls.index(1)
 #             
